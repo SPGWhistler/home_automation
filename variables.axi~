@@ -74,3 +74,6 @@ VOLATILE INTEGER TLLoopCount = 0
 VOLATILE INTEGER pos = 0
 VOLATILE CHAR PioneerIPAddress[] = '192.168.1.10'
 VOLATILE INTEGER PioneerPort = 8102
+
+//Media State Variables
+VOLATILE INTEGER Media_State_Pioneer_Power = 4;

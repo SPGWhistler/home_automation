@@ -13,4 +13,11 @@ DEFINE_START
     
 	SEND_COMMAND dvSerial_PI, "'BAUD 9600,N,8,1'"
 
+    	if ([vdv_TPs, IO_HOUSE_BACK_DOOR_SENSOR] == 1)
+    	{
+		OFF[vdv_TPs, FEEDBACK_HOUSE_BACK_DOOR]
+    	} else {
+		ON[vdv_TPs, FEEDBACK_HOUSE_BACK_DOOR]
+	}
+
 DEFINE_PROGRAM
